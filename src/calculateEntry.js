@@ -16,7 +16,9 @@ function countEntrants(entrants) {
 
 function calculateEntry(entrants) {
   // seu código aqui
-  if (!entrants || entrants === {}) return 0;
+  if (!entrants || entrants === {}) {
+    return 0;
+  }
   const retornando = countEntrants(entrants);
   let valor = 0;
   valor += retornando.child * prices.child;
